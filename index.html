@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create a Responsive Website Using HTML CSS & JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <ul>
+
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li class="logo">Bility</li>
+         <li><a href="#service">Service</a></li>
+         <li><a href="#contact">Contact</a></li>
+        
+        </ul>
+    </div>
+     <div class="banner" id="home">
+        <div class="banner-text">
+            <h2>Creative Agency</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis!</p>
+            <a href="">Learn More</a>
+        </div>
+     </div>
+
+
+     <div class="about" id="about">
+        <div class="section-header">
+            <h2>About US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi animi aliquam quis harum reprehenderit eveniet quibusdam libero obcaecati facere!</p>
+        </div>
+        <div class="about-content">
+            <div class="single-about">
+                <img src="./image/image2.jpg" alt="home">
+
+                <div class="about-text">
+                    <h2>Best Housing Agency</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ipsa. Asperiores nesciunt eum voluptatibus iusto praesentium aliquam perspiciatis illo. Quas doloremque, atque voluptatem a adipisci rerum ab. Neque, repudiandae amet.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="service" id="service">
+    <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat autem recusandae doloribus iste tenetur nemo dolorum? Dolore, optio.</p>
+    </div>
+    <div class="service-content">
+        <div class="single-service">
+            <img src="./image/image3.jpg" alt="">
+            <h2>Confortable Home</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat provident voluptas a, fuga sint incidunt adipisci tempore quidem beatae enim commodi numquam aut?
+
+            </p>
+        </div>
+        <div class="single-service">
+            <img src="./image/image5.jpg" alt="">
+            <h2>Affordable price</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat voluptas enim assumenda rem quisquam aperiam culpa vitae, id quibusdam dolorem earum? Cum, deserunt!</p>
+        </div>
+        <div class="single-service">
+          <img src="./image/image4.jpg" alt="">
+          <h2>Luxury Designs</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero, perferendis molestiae deserunt, dolore, impedit natus voluptas similique distinctio harum qui ad illum magni quidem suscipit.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="section-header">
+            <h2>Contact US</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse tempore vitae ullam, adipisci mollitia fugit, aliquid totam blanditiis nisi deleniti quaerat eveniet eius quasi impedit?</p>
+        </div>
+        <div class="single-contact">
+            <input type="email" placeholder="Enter your Email" required>
+            <input type="password" placeholder="Please Enter your password" required>
+            <textarea  cols="30" rows="10" placeholder="Enter Your Query Here"></textarea>
+            <a href="#">Submit</a>
+        </div>
+    </div>
+    <footer>
+       <p>&copy;Right by Bility website </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+$(window).on("scroll", function() {
+            if($(window).scrollTop() > 50) {
+                $(".header").addClass("active");
+            } else {                
+               $(".header").removeClass("active");
+            }
+        });
+        
+
+    </script>
+
+</body>
+</html>
